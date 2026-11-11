@@ -1,0 +1,213 @@
+{
+  "extName": {
+    "message": "Tab Title Pinner"
+  },
+  "extDescription": {
+    "message": "Replace the tab title of the sites you choose with any text you want, and keep it pinned when the page tries to change it back."
+  },
+  "actionTitle": {
+    "message": "Tab Title Pinner"
+  },
+
+  "optionsDocTitle": {
+    "message": "Tab Title Pinner · Options"
+  },
+  "optionsHeading": {
+    "message": "Tab Title Pinner"
+  },
+  "optionsSubtitle": {
+    "message": "Replace the tab text of the sites you choose with your own words. Saved rules apply to open tabs immediately, and the site's own title changes get reverted."
+  },
+  "rulesHeading": {
+    "message": "Rules"
+  },
+  "countOne": {
+    "message": "1 rule"
+  },
+  "countMany": {
+    "message": "$1 rules"
+  },
+  "colEnabled": {
+    "message": "On"
+  },
+  "colSite": {
+    "message": "Site"
+  },
+  "colTitle": {
+    "message": "Tab title"
+  },
+  "addRule": {
+    "message": "+ Add rule"
+  },
+  "rulesHint": {
+    "message": "Rules are matched from top to bottom and the first match wins. Disabled rules are skipped."
+  },
+  "testHeading": {
+    "message": "Test a URL"
+  },
+  "testPlaceholder": {
+    "message": "https://example.com/some/page"
+  },
+  "testAriaLabel": {
+    "message": "URL to test"
+  },
+  "testRun": {
+    "message": "Test"
+  },
+  "testIdle": {
+    "message": "Enter a URL to see which rule would rewrite it."
+  },
+  "helpHeading": {
+    "message": "Rule syntax"
+  },
+  "helpHostDesc": {
+    "message": "This domain and all of its subdomains, for example {c1}."
+  },
+  "helpPathDesc": {
+    "message": "Only pages whose path starts with {c1}; {c2} matches any path."
+  },
+  "helpAnyDesc": {
+    "message": "Every site. Use with care."
+  },
+  "helpRegexDesc": {
+    "message": "Wrap the rule in {c1} to match the full URL with a regular expression."
+  },
+  "helpFootnote": {
+    "message": "This extension only changes the tab title. Nothing on the page itself is touched."
+  },
+  "saveChanges": {
+    "message": "Save changes"
+  },
+  "statusDirty": {
+    "message": "Unsaved changes"
+  },
+  "statusSaving": {
+    "message": "Saving…"
+  },
+  "statusSaved": {
+    "message": "Saved. Open tabs update immediately."
+  },
+  "statusSavedLocal": {
+    "message": "Saved to local storage. Open tabs update immediately."
+  },
+  "statusFixInvalid": {
+    "message": "Fix the highlighted rules first"
+  },
+  "statusReadFailed": {
+    "message": "Failed to load rules"
+  },
+  "statusSaveFailed": {
+    "message": "Failed to save"
+  },
+  "ruleSwitchTitle": {
+    "message": "Enable this rule"
+  },
+  "ruleSwitchAria": {
+    "message": "Enable rule $1"
+  },
+  "rulePatternAria": {
+    "message": "Site rule $1"
+  },
+  "ruleTitleAria": {
+    "message": "Tab title $1"
+  },
+  "ruleRemoveTitle": {
+    "message": "Delete this rule"
+  },
+  "ruleRemoveAria": {
+    "message": "Delete rule $1"
+  },
+  "rulePatternPlaceholder": {
+    "message": "example.com"
+  },
+  "ruleTitlePlaceholder": {
+    "message": "My own tab title"
+  },
+  "errNeedSite": {
+    "message": "Enter the site to rewrite"
+  },
+  "errNeedTitle": {
+    "message": "Enter the tab title to show"
+  },
+  "errDuplicate": {
+    "message": "Duplicate of a rule above; only the first one applies"
+  },
+  "testNeedUrl": {
+    "message": "Enter a URL first, for example {c1}"
+  },
+  "testBadUrl": {
+    "message": "That URL can't be parsed. Check the format."
+  },
+  "testMiss": {
+    "message": "No rule matches this URL (disabled rules don't count)."
+  },
+  "testHit": {
+    "message": "Matched rule {b1}; the tab title will read {b2} (tested URL: {c1})"
+  },
+
+  "errRuleEmpty": {
+    "message": "The site rule can't be empty"
+  },
+  "errMissingHost": {
+    "message": "The rule is missing a domain"
+  },
+  "errHostWildcard": {
+    "message": "Wildcards aren't allowed in the domain part; use a subdomain or the /regex/ form"
+  },
+  "errRegexInvalid": {
+    "message": "Invalid regular expression"
+  },
+
+  "errStorageRead": {
+    "message": "Read failed"
+  },
+  "errStorageWrite": {
+    "message": "Write failed"
+  },
+  "errStorageUnavailable": {
+    "message": "Extension storage is unavailable; rules can't be saved"
+  },
+
+  "popupSiteReading": {
+    "message": "Reading the current site…"
+  },
+  "popupFieldLabel": {
+    "message": "Change this site's tab title to"
+  },
+  "popupEnableRule": {
+    "message": "Enable this rule"
+  },
+  "popupApply": {
+    "message": "Apply to this site"
+  },
+  "popupAllRules": {
+    "message": "All rules"
+  },
+  "popupNoUrl": {
+    "message": "Can't read this page's address"
+  },
+  "popupNotWeb": {
+    "message": "This tab isn't a regular web page"
+  },
+  "popupOnlyHttp": {
+    "message": "Only http and https pages can be rewritten."
+  },
+  "popupHasRule": {
+    "message": "Existing rule: {c1}"
+  },
+  "popupNoRule": {
+    "message": "No rule for this site yet"
+  },
+  "popupNeedTitle": {
+    "message": "Enter the tab title first"
+  },
+  "popupBadSite": {
+    "message": "This address is invalid, so no rule can be created"
+  },
+  "popupApplied": {
+    "message": "Applied. This tab updates right away."
+  },
+  "popupNewRuleHint": {
+    "message": "New rule {c1}. Open \"All rules\" to narrow the scope."
+  }
+}

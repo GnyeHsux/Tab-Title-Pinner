@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <title data-i18n="extName">标签标题钉子</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="popup">
+      <header class="popup__head">
+        <img class="popup__logo" src="../icons/icon32.png" alt="" width="30" height="30" />
+        <div class="popup__intro">
+          <h1 class="popup__title" data-i18n="extName">标签标题钉子</h1>
+          <p class="popup__site" id="site" data-i18n="popupSiteReading">正在读取当前网站…</p>
+        </div>
+      </header>
+
+      <div class="popup__body">
+        <label class="field" for="title-input">
+          <span class="field__label" data-i18n="popupFieldLabel">这个网站的标签文案改成</span>
+          <input
+            id="title-input"
+            class="input"
+            type="text"
+            spellcheck="false"
+            placeholder="我的标题我做主"
+            data-i18n-placeholder="ruleTitlePlaceholder"
+          />
+        </label>
+
+        <label class="switch-row" id="enable-row" hidden>
+          <span class="switch-row__text" data-i18n="popupEnableRule">启用这条规则</span>
+          <span class="switch">
+            <input type="checkbox" id="enable-toggle" />
+            <span class="switch__track"></span>
+          </span>
+        </label>
+
+        <div class="actions">
+          <button type="button" class="btn btn--primary" id="apply" data-i18n="popupApply">应用到这个网站</button>
+          <button type="button" class="btn" id="open-options" data-i18n="popupAllRules">全部规则</button>
+        </div>
+
+        <p class="popup__status" id="status" role="status" aria-live="polite"></p>
+        <p class="popup__hint" id="hint" hidden></p>
+      </div>
+    </main>
+
+    <script src="../shared/i18n.js"></script>
+    <script src="../shared/config.js"></script>
+    <script src="../shared/matcher.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>

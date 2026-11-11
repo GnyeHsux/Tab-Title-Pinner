@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title data-i18n="optionsDocTitle">标签标题钉子 · 设置</title>
+    <link rel="stylesheet" href="options.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="head">
+        <img class="head__logo" src="../icons/icon128.png" alt="" width="48" height="48" />
+        <div>
+          <h1 class="head__title" data-i18n="optionsHeading">标签标题钉子</h1>
+          <p class="head__sub" data-i18n="optionsSubtitle">
+            把指定网站的浏览器标签文案换成你想要的文字。保存后已经打开的页面会立即生效，网站自己再改标题也会被拉回来。
+          </p>
+        </div>
+      </header>
+
+      <section class="card" aria-labelledby="rules-title">
+        <div class="card__head">
+          <h2 class="card__title" id="rules-title" data-i18n="rulesHeading">改写规则</h2>
+          <span class="badge" id="rule-count">0 条</span>
+        </div>
+
+        <div class="rules-head" aria-hidden="true">
+          <span data-i18n="colEnabled">启用</span>
+          <span data-i18n="colSite">网站</span>
+          <span data-i18n="colTitle">标签标题</span>
+          <span></span>
+        </div>
+        <div class="rules" id="rules"></div>
+
+        <button type="button" class="btn btn--ghost btn--block" id="add-rule" data-i18n="addRule">+ 添加规则</button>
+        <p class="hint" data-i18n="rulesHint">从上往下匹配，第一条命中的规则生效；关闭开关的规则会被跳过。</p>
+      </section>
+
+      <section class="card" aria-labelledby="test-title">
+        <div class="card__head">
+          <h2 class="card__title" id="test-title" data-i18n="testHeading">规则测试</h2>
+        </div>
+        <div class="row">
+          <input
+            id="test-url"
+            class="input"
+            type="text"
+            spellcheck="false"
+            placeholder="https://example.com/some/page"
+            data-i18n-placeholder="testPlaceholder"
+            aria-label="要测试的网址"
+            data-i18n-aria-label="testAriaLabel"
+          />
+          <button type="button" class="btn" id="test-run" data-i18n="testRun">测试</button>
+        </div>
+        <p class="test-result" id="test-result" data-i18n="testIdle">输入一个网址，看看它会被哪条规则改写。</p>
+      </section>
+
+      <section class="card" aria-labelledby="help-title">
+        <div class="card__head">
+          <h2 class="card__title" id="help-title" data-i18n="helpHeading">网站规则怎么写</h2>
+        </div>
+        <dl class="help">
+          <div class="help__row">
+            <dt><code>example.com</code></dt>
+            <dd data-i18n-tpl="helpHostDesc" data-values='{"c1":"www.example.com"}'>
+              这个域名本身和它的所有子域名，例如 <code>www.example.com</code>。
+            </dd>
+          </div>
+          <div class="help__row">
+            <dt><code>example.com/notes*</code></dt>
+            <dd data-i18n-tpl="helpPathDesc" data-values='{"c1":"/notes","c2":"*"}'>
+              只改写以 <code>/notes</code> 开头的页面，<code>*</code> 代表任意路径。
+            </dd>
+          </div>
+          <div class="help__row">
+            <dt><code>*</code></dt>
+            <dd data-i18n="helpAnyDesc">所有网站都改写，谨慎使用。</dd>
+          </div>
+          <div class="help__row">
+            <dt><code>/^https:\/\/example\.com\//</code></dt>
+            <dd data-i18n-tpl="helpRegexDesc" data-values='{"c1":"/…/"}'>
+              用 <code>/…/</code> 包起来时，按正则表达式匹配完整网址。
+            </dd>
+          </div>
+        </dl>
+        <p class="hint" data-i18n="helpFootnote">这个扩展只改标签标题，不会改动页面里的任何内容。</p>
+      </section>
+    </main>
+
+    <footer class="savebar">
+      <span class="savebar__status" id="status" role="status" aria-live="polite"></span>
+      <button type="button" class="btn btn--primary" id="save" data-i18n="saveChanges">保存修改</button>
+    </footer>
+
+    <script src="../shared/i18n.js"></script>
+    <script src="../shared/config.js"></script>
+    <script src="../shared/matcher.js"></script>
+    <script src="options.js"></script>
+  </body>
+</html>

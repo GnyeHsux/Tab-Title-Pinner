@@ -1,0 +1,213 @@
+{
+  "extName": {
+    "message": "标签标题钉子"
+  },
+  "extDescription": {
+    "message": "把指定网站的标签页标题钉成你想要的文案；网站改回去，也会被立刻改回来。"
+  },
+  "actionTitle": {
+    "message": "标签标题钉子"
+  },
+
+  "optionsDocTitle": {
+    "message": "标签标题钉子 · 设置"
+  },
+  "optionsHeading": {
+    "message": "标签标题钉子"
+  },
+  "optionsSubtitle": {
+    "message": "把指定网站的浏览器标签文案换成你想要的文字。保存后已经打开的页面会立即生效，网站自己再改标题也会被拉回来。"
+  },
+  "rulesHeading": {
+    "message": "改写规则"
+  },
+  "countOne": {
+    "message": "1 条"
+  },
+  "countMany": {
+    "message": "$1 条"
+  },
+  "colEnabled": {
+    "message": "启用"
+  },
+  "colSite": {
+    "message": "网站"
+  },
+  "colTitle": {
+    "message": "标签标题"
+  },
+  "addRule": {
+    "message": "+ 添加规则"
+  },
+  "rulesHint": {
+    "message": "从上往下匹配，第一条命中的规则生效；关闭开关的规则会被跳过。"
+  },
+  "testHeading": {
+    "message": "规则测试"
+  },
+  "testPlaceholder": {
+    "message": "https://example.com/some/page"
+  },
+  "testAriaLabel": {
+    "message": "要测试的网址"
+  },
+  "testRun": {
+    "message": "测试"
+  },
+  "testIdle": {
+    "message": "输入一个网址，看看它会被哪条规则改写。"
+  },
+  "helpHeading": {
+    "message": "网站规则怎么写"
+  },
+  "helpHostDesc": {
+    "message": "这个域名本身和它的所有子域名，例如 {c1}。"
+  },
+  "helpPathDesc": {
+    "message": "只改写以 {c1} 开头的页面，{c2} 代表任意路径。"
+  },
+  "helpAnyDesc": {
+    "message": "所有网站都改写，谨慎使用。"
+  },
+  "helpRegexDesc": {
+    "message": "用 {c1} 包起来时，按正则表达式匹配完整网址。"
+  },
+  "helpFootnote": {
+    "message": "这个扩展只改标签标题，不会改动页面里的任何内容。"
+  },
+  "saveChanges": {
+    "message": "保存修改"
+  },
+  "statusDirty": {
+    "message": "有未保存的修改"
+  },
+  "statusSaving": {
+    "message": "保存中…"
+  },
+  "statusSaved": {
+    "message": "已保存，已打开的页面立即生效"
+  },
+  "statusSavedLocal": {
+    "message": "已保存到本地存储，已打开的页面立即生效"
+  },
+  "statusFixInvalid": {
+    "message": "先把标红的规则改好"
+  },
+  "statusReadFailed": {
+    "message": "读取规则失败"
+  },
+  "statusSaveFailed": {
+    "message": "保存失败"
+  },
+  "ruleSwitchTitle": {
+    "message": "启用这条规则"
+  },
+  "ruleSwitchAria": {
+    "message": "启用规则 $1"
+  },
+  "rulePatternAria": {
+    "message": "网站规则 $1"
+  },
+  "ruleTitleAria": {
+    "message": "标签标题 $1"
+  },
+  "ruleRemoveTitle": {
+    "message": "删除这条规则"
+  },
+  "ruleRemoveAria": {
+    "message": "删除规则 $1"
+  },
+  "rulePatternPlaceholder": {
+    "message": "example.com"
+  },
+  "ruleTitlePlaceholder": {
+    "message": "我的标题我做主"
+  },
+  "errNeedSite": {
+    "message": "请填写要改写的网站"
+  },
+  "errNeedTitle": {
+    "message": "请填写要显示的标签标题"
+  },
+  "errDuplicate": {
+    "message": "和上面的规则重复了，只有第一条会生效"
+  },
+  "testNeedUrl": {
+    "message": "先输入一个网址，例如 {c1}"
+  },
+  "testBadUrl": {
+    "message": "这个网址看不懂，检查一下格式。"
+  },
+  "testMiss": {
+    "message": "没有规则命中这个网址（被关闭的规则不算）。"
+  },
+  "testHit": {
+    "message": "命中规则 {b1}，标签标题会显示为 {b2}（测试网址：{c1}）"
+  },
+
+  "errRuleEmpty": {
+    "message": "网站规则不能为空"
+  },
+  "errMissingHost": {
+    "message": "规则缺少域名"
+  },
+  "errHostWildcard": {
+    "message": "域名部分不支持通配符，请用子域名或 /正则/ 写法"
+  },
+  "errRegexInvalid": {
+    "message": "正则表达式无效"
+  },
+
+  "errStorageRead": {
+    "message": "读取失败"
+  },
+  "errStorageWrite": {
+    "message": "保存失败"
+  },
+  "errStorageUnavailable": {
+    "message": "扩展存储不可用，无法保存规则"
+  },
+
+  "popupSiteReading": {
+    "message": "正在读取当前网站…"
+  },
+  "popupFieldLabel": {
+    "message": "这个网站的标签文案改成"
+  },
+  "popupEnableRule": {
+    "message": "启用这条规则"
+  },
+  "popupApply": {
+    "message": "应用到这个网站"
+  },
+  "popupAllRules": {
+    "message": "全部规则"
+  },
+  "popupNoUrl": {
+    "message": "这个页面无法读取地址"
+  },
+  "popupNotWeb": {
+    "message": "当前标签不是普通网页"
+  },
+  "popupOnlyHttp": {
+    "message": "只能改写 http / https 网页的标签标题。"
+  },
+  "popupHasRule": {
+    "message": "已有规则：{c1}"
+  },
+  "popupNoRule": {
+    "message": "这个网站还没有规则"
+  },
+  "popupNeedTitle": {
+    "message": "先填写要显示的标签文案"
+  },
+  "popupBadSite": {
+    "message": "这个网站地址不合法，无法生成规则"
+  },
+  "popupApplied": {
+    "message": "已应用，当前标签会立刻改成这个文案"
+  },
+  "popupNewRuleHint": {
+    "message": "新建规则：{c1}，可以在「全部规则」里改更细的范围。"
+  }
+}
